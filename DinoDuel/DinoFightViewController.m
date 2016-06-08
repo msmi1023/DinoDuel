@@ -21,7 +21,7 @@ UIView *dino1View, *dino2View;
 	
 	[self.navigationItem setHidesBackButton:YES];
 	
-	//self.view.backgroundColor = [UIColor blackColor];
+	self.view.backgroundColor = [UIColor blackColor];
 	
 	dino1View = [[UIView alloc] initWithFrame:CGRectMake(0-(self.view.bounds.size.width/2),
 																 0,
@@ -78,6 +78,8 @@ UIView *dino1View, *dino2View;
 }
 
 - (void)showWinner {
+	self.view.backgroundColor = [UIColor whiteColor];
+	
 	[dino1View removeFromSuperview];
 	[dino2View removeFromSuperview];
 	

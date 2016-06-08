@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Dinosaur.h"
+#import "GameRunner.h"
 
-@interface DinoFightViewController : UIViewController
+@interface DinoFightViewController : UIViewController <GameRunner>
 
 @property (strong, nonatomic) Dinosaur *dino1;
 @property (strong, nonatomic) Dinosaur *dino2;
